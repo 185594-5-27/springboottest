@@ -15,6 +15,10 @@ import java.lang.reflect.Method;
  * @since: 2017-03-29.
  * @version:1.0
  * @describe: 编写切面规则
+ *       @Aspect表明这个类是一个是一个切面。
+ *       @Component表示会扫描成为一个Bean。
+ *       @Pointcut表示注解式声明的切点。
+ *       @After表示注解式声明的建言。
  */
 @Aspect
 @Component
@@ -22,7 +26,7 @@ public class LogAspect {
 
     @Pointcut("@annotation(edu.example.ch1_3_3_aop.Action)")
     public void annotionPointCut() {
-        System.out.println("annotionPointCut");
+
     }
 
     @After("annotionPointCut()")
