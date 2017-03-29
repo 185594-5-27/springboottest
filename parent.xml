@@ -14,6 +14,9 @@
         <junit.version>4.10</junit.version>
         <springwebmvc.version>4.3.6.RELEASE</springwebmvc.version>
         <mysql.version>5.1.18</mysql.version>
+        <springaop.version>4.1.6.RELEASE</springaop.version>
+        <aspectjrt.version>1.8.5</aspectjrt.version>
+        <aspectjweaver.version>1.8.5</aspectjweaver.version>
     </properties>
 
     <dependencyManagement>
@@ -35,6 +38,24 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aop</artifactId>
+                <version>${springaop.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjrt -->
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjrt</artifactId>
+                <version>${aspectjrt.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>${aspectjweaver.version}</version>
             </dependency>
 
 
