@@ -17,6 +17,7 @@
         <springaop.version>4.1.6.RELEASE</springaop.version>
         <aspectjrt.version>1.8.5</aspectjrt.version>
         <aspectjweaver.version>1.8.5</aspectjweaver.version>
+        <commonio.version>2.4</commonio.version>
     </properties>
 
     <dependencyManagement>
@@ -57,6 +58,13 @@
                 <artifactId>aspectjweaver</artifactId>
                 <version>${aspectjweaver.version}</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commonio.version}</version>
+            </dependency>
+
 
 
         </dependencies>
